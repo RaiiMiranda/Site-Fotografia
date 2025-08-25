@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-fotografos.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex"> 
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo" id="topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo-todos">
+            <h3> Fotógrafos Influentes </h3>
+            <div class="header-paragrafo">
+              <p> Aqui, você encontrará uma <span>seleção de 5 artistas</span> cuja visão e talento transcendem a captura de imagens, inspirando e redefinindo a estética contemporânea. </p>
+            </div>
+            <a href="guia.html"> <button class="botao"> Confira também o nosso guia! </button> </a>
+          </div>
+
+          <img class="fundo-principal fundo-fotografos-famosos" src="img/famosos/fundo-fotografos-famosos.jpg" alt="Imagem ilustrativa">
+          
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <div class="fixed-seta" id="seta-famosos">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+
+      <!-- main -->
+      <main class="container-main">
+        <!-- section 1 -->
+        <section class="secao01-texto">
+          <div class="secao01-titulo">
+            <h1> 5 Fotógrafos Renomados do Mundo </h1>
+          </div>
+            <p> Para se tornar um grande fotógrafo é necessário, além de muito aperfeiçoamento e técnica, <b>estudar o trabalho daqueles que guiaram o caminho até aqui</b>. Afinal, a fotografia é uma arte em constante transformação e, com novas tecnologias surgindo a todo momento, uma nova tendência ou uma nova forma de captura podem surgir do dia para a noite. </p> <br>
+            <p> Da primeira fotografia da história, tirada no século XIX, até os dias de hoje, com 60 bilhões de novas imagens postadas diariamente no Instagram, alguns nomes se destacaram no meio por introduzirem novas técnicas, por terem um estilo marcante ou ainda por trazerem algo simplesmente novo e fresco para essa emblemática profissão.  </p> <br>
+            <p> Quais seriam, então, os fotógrafos mais influentes da história? É uma pergunta difícil e com variadas respostas, mas que, com certeza, pode ajudar na busca por inspiração ou aumento de repertório. Por isso, foi desenvolvida uma lista com 15 grandes nomes da profissão para você se inspirar, em que cada um representa uma determinada área da fotografia.  </p>
+        </section>
+        <!-- end section 1 -->
+
+        <!-- section 2 - mobile -->
+        <section class="main-mobile">
+          <div class="container-esquerda-img">
+            <a href="ansel-adams.html"><img src="img/famosos/individual/ansel-adams/ansel_adams.jpg" alt=""></a>
+            <div class="container-texto-famosos">
+              <h1> Ansel Adams </h1>
+              <p> Fotógrafo norte-americano </p>
+            </div>
+          </div>
+
+          <div class="container-esquerda-img">
+            <a href="anne-geddes.html"><img src="img/famosos/individual/anne-geddes/anne.jpg" alt=""></a>
+            <div class="container-texto-famosos">
+              <h1> Anne Geddes </h1>
+              <p> Fotógrafa australiana </p>
+            </div>
+          </div>
+
+          <div class="container-esquerda-img">
+            <a href="annie-leibovitz.html"><img src="img/famosos/individual/annie-leibovitz/annie.jpg" alt=""></a>
+            <div class="container-texto-famosos">
+              <h1> Annie Leibovitz </h1>
+              <p> Fotógrafa norte-americana </p>
+            </div>
+          </div>
+
+          <div class="container-esquerda-img">
+            <a href="sebastiao-salgado.html"><img src="img/famosos/individual/sebastiao-salgado/sebastiao.webp" alt=""></a>
+            <div class="container-texto-famosos">
+              <h1> Sebastião Salgado </h1>
+              <p> Fotógrafo brasileiro </p>
+            </div>
+          </div>
+
+          <div class="container-esquerda-img">
+            <a href="cindy-sherman.html"><img src="img/famosos/individual/cindy-sherman/cindy.jpg" alt=""></a>
+            <div class="container-texto-famosos">
+              <h1> Cindy Sherman </h1>
+              <p> Fotógrafa norte-americana </p>
+            </div>
+          </div>
+        </section>
+        <!-- end section 2 - mobile -->
+
+        <!-- section 2 -->
+        <section class="main-secao01 main-nao-mobile">
+          <div class="container-tudo-famosos">
+            <div class="container-esquerda-img container-esquerda-img-topo">
+              <a href="ansel-adams.html"><img src="img/famosos/individual/ansel-adams/ansel_adams.jpg" alt=""></a>
+              <div class="container-texto-famosos">
+                <h1> Ansel Adams </h1>
+                <p> Fotógrafo norte-americano </p>
+              </div>
+            </div>
+
+            <div class="container-direita-famosos">
+              <div class="container-direita-topo">
+                <div class="container-direita-img-esquerda">
+                  <img src="img/famosos/individual/ansel-adams/foto1.jpg" alt="">
+                </div>
+
+                <div class="container-direita-img-direita">
+                  <img src="img/famosos/individual/ansel-adams/foto2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="container-direita-baixo">
+                <img src="img/famosos/individual/ansel-adams/foto5.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-tudo-famosos">
+            <div class="container-esquerda-img">
+              <a href="anne-geddes.html"><img src="img/famosos/individual/anne-geddes/anne.jpg" alt=""></a>
+              <div class="container-texto-famosos">
+                <h1> Anne Geddes </h1>
+                <p> Fotógrafa australiana </p>
+              </div>
+            </div>
+
+            <div class="container-direita-famosos">
+              <div class="container-direita-topo">
+                <div class="container-direita-img-esquerda">
+                  <img src="img/famosos/individual/anne-geddes/foto1.jpg" alt="">
+                </div>
+
+                <div class="container-direita-img-direita">
+                  <img src="img/famosos/individual/anne-geddes/foto4.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="container-direita-baixo">
+                <img src="img/famosos/individual/anne-geddes/foto2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-tudo-famosos">
+            <div class="container-esquerda-img">
+              <a href="annie-leibovitz.html"><img src="img/famosos/individual/annie-leibovitz/annie.jpg" alt=""></a>
+              <div class="container-texto-famosos">
+                <h1> Annie Leibovitz </h1>
+                <p> Fotógrafa norte-americana </p>
+              </div>
+            </div>
+
+            <div class="container-direita-famosos">
+              <div class="container-direita-topo">
+                <div class="container-direita-img-esquerda">
+                  <img src="img/famosos/individual/annie-leibovitz/foto1.jpg" alt="">
+                </div>
+
+                <div class="container-direita-img-direita">
+                  <img src="img/famosos/individual/annie-leibovitz/foto2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="container-direita-baixo">
+                <img src="img/famosos/individual/annie-leibovitz/foto4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-tudo-famosos">
+            <div class="container-esquerda-img">
+              <a href="sebastiao-salgado.html"><img src="img/famosos/individual/sebastiao-salgado/sebastiao.webp" alt=""></a>
+              <div class="container-texto-famosos">
+                <h1> Sebastião Salgado </h1>
+                <p> Fotógrafo brasileiro </p>
+              </div>
+            </div>
+
+            <div class="container-direita-famosos">
+              <div class="container-direita-topo">
+                <div class="container-direita-img-esquerda">
+                  <img src="img/famosos/individual/sebastiao-salgado/foto1.webp" alt="">
+                </div>
+
+                <div class="container-direita-img-direita">
+                  <img src="img/famosos/individual/sebastiao-salgado/foto2.webp" alt="">
+                </div>
+              </div>
+
+              <div class="container-direita-baixo">
+                <img src="img/famosos/individual/sebastiao-salgado/foto3.webp" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="container-tudo-famosos">
+            <div class="container-esquerda-img">
+              <a href="cindy-sherman.html"><img src="img/famosos/individual/cindy-sherman/cindy.jpg" alt=""></a>
+              <div class="container-texto-famosos">
+                <h1> Cindy Sherman </h1>
+                <p> Fotógrafa norte-americana </p>
+              </div>
+            </div>
+
+            <div class="container-direita-famosos">
+              <div class="container-direita-topo">
+                <div class="container-direita-img-esquerda">
+                  <img src="img/famosos/individual/cindy-sherman/foto1.jpg" alt="">
+                </div>
+
+                <div class="container-direita-img-direita">
+                  <img src="img/famosos/individual/cindy-sherman/foto4.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="container-direita-baixo">
+                <img src="img/famosos/individual/cindy-sherman/foto3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section 6 -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer --> 
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

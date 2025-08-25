@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-guia.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex">
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo" id="topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo-todos">
+            <h3> Guia para Iniciantes </h3>
+            <div class="header-paragrafo">
+              <p> Se você admira a arte e quer embarcar no mundo da fotografia, mas não sabe nem por onde começar, <span>confira nosso guia!</span> Aqui, você vai aprender tudo o que precisa para mandar bem na hora de clicar. </p>
+            </div>
+            <a href="#"> <button class="botao"> Confira o nosso curso completo! </button> </a>
+          </div>
+
+          <img class="fundo-principal fundo-guia" src="img/guia/fundo-guia.jpg" alt="imagem de fundo do site">
+
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <div class="fixed-seta" id="seta-guia">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+
+      <!-- main -->
+      <main class="container-main main-guia">
+        <!-- section 1 -->
+        <section class="main-secao01">
+          <div class="secao01-titulo">
+            <h1> Introdução à fotografia: o que você precisa aprender </h1>
+          </div>
+            <p> Para fazer sua introdução à fotografia, você precisa tomar três passos iniciais: <b>entender as funções da sua câmera, praticar sua disciplina e buscar muitas referências</b>.</p> <br>
+            <p> A fotografia tem diversos nichos, alguns muito específicos, que precisarão de mais estudo.</p> <br>
+            <p> Por outro lado, também existem diversas especialidades em que, com muita prática, você pode se aperfeiçoar e conseguir bons resultados.</p> <br>
+            <p> Não é necessariamente um curso, uma faculdade ou equipamento caríssimo que vai te transformar num bom fotógrafo. E sim, uma <b>união equilibrada de todos esses conceitos, com uma pitada generosa de dedicação</b>.</p>
+          
+          <h1> Como está o mercado da fotografia profissional? </h1>
+            <p> Para que você entenda o que é o mercado profissional da fotografia, é preciso compreender que contratar um fotógrafo é considerado como um artigo de luxo entre outros tipos de consumo.</p> <br>
+            <p> Existem diversas pessoas que têm uma câmera DSLR acham que podem cobrir eventos ou fazer ensaios. Essas pessoas costumam cobrar barato e o trabalho costuma não ser tão bom.</p> <br>
+            <p> A verdade é que o mercado está saturado desses falsos profissionais. Para conseguir o seu espaço, independente do nicho que você escolher, é essencial que você seja bom e comprometido com o que faz.</p> <br>
+            <p> Quanto melhor você for no nicho que escolheu, mais caro você poderá cobrar e mais clientes você terá, já que eles saberão que estão pagando por um trabalho de alta qualidade.</p> <br>
+            <p> <b>A fotografia sempre tem mercado, mas apenas para os bons fotógrafos.</b></p>
+            <a href="#"> <button class="botao"> Saiba mais sobre as tendências do mercado </button> </a> <br> <br>
+          
+          <h1> Os seguintes assuntos serão abordados nesta página: </h1>
+            <div class="container-links">
+              <div class="esquerda">
+                <a href="#01"><span>●</span> Como funciona a câmera fotográfica?</a> <br>
+                <a href="#02"><span>●</span> O fotômetro e a exposição ideal</a> <br>
+                <a href="#03"><span>●</span> Balanço de branco</a> <br>
+                <a href="#04"><span>●</span> Foco das fotografias</a> <br>
+                <a href="#05"><span>●</span> Profundidade de Campo</a> <br>
+                <a href="#06"><span>●</span> Como colocar em prática</a> <br>
+              </div>
+            </div>
+         </section>
+        <!-- end section 1 -->
+      </main>
+      <!-- end main -->
+
+      <!-- seção-fora -->
+      <section class="secao-fora-guia">
+          <img class="fundo-secundário-guia" src="img/guia/camera.jpg" alt="">
+      </section>
+      <!-- end seção-fora-->
+
+      <!-- main -->
+      <main class="container-main main-guia">
+        <!-- section 2 -->
+        <section class="main-secao03" id="01">
+          <h1> <span>▶</span> Como funciona a câmera fotográfica? </h1>
+            <p> Na hora do clique, a luz do local passa pela lente e é enviada ao sensor – no caso das analógicas, para o filme. Tudo o que estiver iluminado o suficiente vai aparecer, formando a imagem. </p> <br>
+            <p> A quantidade de luz que entra na câmera é o que determina se ela terá uma exposição apropriada ou se ficará superexposta ou subexposta. Para definir isso, o fotógrafo precisa levar em conta três variáveis, sempre considerando a <b>iluminação do ambiente: ISO, abertura do diafragma e velocidade do obturador</b>. Todas elas podem ser alteradas em equipamentos que contam com o modo M (manual). </p> <br>
+          
+          <h2 class="h2-guia"> <span>▶</span> ISO (Organização Internacional de Padronização) </h2>
+            <p> Também chamado como "velocidade do filme", o ISO é o que determina a sensibilidade do filme perante a luz. Nas câmeras analógicas, é preciso escolher o ISO na hora de comprar um filme. Os mais sensíveis e mais indicados para ambientes escuros são os de ISO mais alto, como o ISO 800. Os menos sensíveis e indicados para lugares com muita luz são os de baixo ISO, como o ISO 100. </p> <br>
+            <p> O mesmo conceito foi levado para a fotografia digital: em uma câmera, você pode determinar o grau de sensibilidade do sensor à luz. Ao escolher um ISO mais alto, porém, a granulação na imagem também aumenta. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/iso.jpg" alt="Imagem ilustrativa sobre ISO"> 
+              <p> Observe o quanto a imagem <span>fica mais brilhante quando o ISO é aumentado de 100 para 1600.</span> </p>
+            </div>
+
+          <h2 class="h2-guia"> Como configurar? </h2>
+            <p> Os menus variam a cada marca e modelo de câmera. Por isso, no modo manual de seu equipamento, procure pelo ISO nos menus de ajuste. Quanto mais alto o número, mais sensível seu sensor ficará. </p> <br>
+
+          <h2 class="h2-guia"> <span>▶</span> Obturador </h2>
+            <p> Sabe o momento em que ouvimos o famoso barulhinho “click” quando tiramos uma foto? Nada mais é do que o obturador da câmera em ação! </p> <br>
+            <p> O obturador é um dispositivo da câmera que determina por quanto tempo o filme ou o sensor digital será exposto à luz. O obturador só é aberto com o acionamento do botão de disparo, fazendo com que a luz entre no equipamento. </p> <br>
+            <p> Para entender melhor a relação do obturador com o resultado da imagem, imagine o seguinte: um fotógrafo está parado e se prepara para fotografar um objeto em movimento. O objeto então atravessa o quadro determinado pelo fotógrafo, horizontalmente, até sair de cena. </p> <br>
+            <p> Se a velocidade de abertura do obturador for baixa e o mecanismo permanecer aberto por mais do que uma fração de segundo, a imagem será captada continuamente, enquanto o objeto passa por frente da câmera. O resultado seria uma imagem borrada. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/obturador.jpg" alt="Imagem ilustrativa sobre Obturador"> 
+              <p> Cada valor de <span>velocidade do obturador</span> causa um efeito diferente na sua foto. </p>
+            </div>
+
+          <h2 class="h2-guia"> Como configurar? </h2>
+            <p> O tempo de exposição se mede em frações de segundo. Em uma câmera comum, ele pode variar entre 30s até 1/4000. Algumas câmeras também contam com o modo “B” (bulb), que deixa o obturador aberto pelo tempo em que o botão de disparo estiver pressionado. </p> <br>
+            <p> O número indicado no display da câmera é sempre a parte de baixo da fração, ou seja: na exposição 1/3000, a câmera deve exibir apenas o número 3000. Ao passar para os segundos, o equipamento passa a usar apóstrofes para indicar o tempo (2’ para dois segundos, por exemplo). </p> <br>
+
+          <h2 class="h2-guia"> <span>▶</span> Diafragma </h2>
+            <p> O diafragma é o que define a quantidade de luz que entrará na câmera, indicando a intensidade com a qual o sensor (ou o filme) receberá a luz. Enquanto o obturador determina por quanto tempo o sensor será exposto, o diafragma é o que faz com que o equipamento receba muita ou pouca luz. </p> <br>
+            <p> Ao contrário do obturador, que abre e fecha a cada disparo, o diafragma fica sempre aberto na posição indicada pelo fotógrafo. O diafragma forma uma dupla inseparável com o obturador: o fotógrafo sempre precisa ajustar ambos os elementos para obter a imagem desejada. </p> <br>
+            <p> Por exemplo: você pode aumentar a abertura do diafragma para fazer imagens nítidas de um objeto em movimento em um ambiente menos iluminado. O diafragma fica na própria lente e a sua capacidade de abertura varia conforme o modelo escolhido. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/diafragma.jpg" alt="Imagem ilustrativa sobre Diafragma"> 
+              <p> Funciona como pupilas humanas: <span>quanto mais abertas estiverem, mais luz passará e vice-versa.</span> </p>
+            </div>
+          
+          <h2 class="h2-guia"> Como configurar? </h2>
+            <p> O diafragma é medido por um valor determinado pela letra “f”. Quanto menor o valor de f, mais aberto estará o seu diafragma. Como já citamos, a capacidade de abertura do diafragma vai depender da lente utilizada. Lentes consideradas “mais claras” podem ter aberturas a partir de f/1.4, por exemplo, enquanto as lentes comuns partem de f/2.8, chegando até ao f/11 ou f/22. </p> <br>
+          
+          <h1 id="02"> <span>▶</span> O fotômetro e a exposição ideal </h1>
+            <p> Para quem está começando, o “cálculo” para determinar cada elemento pode parecer um pouco confuso. Por isso, você vai precisar ficar sempre de olho em um dos elementos mais importantes do equipamento: o <b>fotômetro</b>. </p> <br>
+            <p> O mecanismo ajuda os fotógrafos a perceberem se a imagem terá a exposição adequada, mesmo antes de fazer o clique. O fotômetro interpreta a luz do local conforme as configurações determinadas pelo usuário, indicando o quão próximo da exposição “perfeita” ela ficará. </p> <br>
+            <p> Sua medição aparece em uma pequena régua, como a da imagem acima. Se a seta estiver no meio, significa que a exposição é a ideal. Se ela estiver pendendo para o lado esquerdo, a fotografia ficará muito escura. Se ela pender para o lado direito, significa que há luz em excesso entrando na câmera, o que poderá deixar a foto muito clara. Nos casos mais extremos, a imagem subexposta ficará completamente preta, enquanto a superexposta ficará totalmente branca. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/fotometro.webp" alt="Imagem ilustrativa sobre Fotometria"> 
+              <img class="img-secao03" src="img/guia/fotometro2.webp" alt="Imagem ilustrativa sobre Fotometria">
+              <p> No exemplo do meio, a fotometria marca o “zero” no meio da régua, consequentemente <span>indicando uma exposição equilibrada entre claros e escuros</span>. </p> 
+            </div>
+
+          <h1 id="03"> <span>▶</span> Balanço de branco </h1>
+            <p> A luz que bate nos objetos e é refletida para dentro da câmera pode aparecer em diversas cores. Isso muda conforme a fonte de iluminação usada e a cor dos próprios objetos, que podem refletir tons diferentes. Para que as cores sejam apresentadas da maneira correta, é preciso manter o ajuste sempre da forma adequada para cada situação. </p> <br>
+            <p> A diferença nos tons é medida por algo chamado temperatura de cor, que é medida em Kelvins. Para entender um pouco melhor, você pode conferir a medição na tabela acima. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/balanco-de-branco.webp" alt="Imagem ilustrativa sobre Balanço de Branco"> 
+              <p> Funciona como pupilas humanas: <span>quanto mais abertas estiverem, mais luz passará e vice-versa.</span> </p>
+            </div>
+
+          <h2 class="h2-guia"> Como configurar? </h2>
+            <p> Existem diversas formas de ajustar isso: algumas câmeras contam com o controle manual e outras trazem o balanço pré-definido e você só precisa escolher opções entre “Sol”, “Luz incandescente”, por exemplo. </p> <br>
+            <p> Sua câmera também deve contar com o modo automático (AWB). Ele pode ser uma boa opção para quem não quer perder tempo com o ajuste, mas tende a deixar as imagens sem vida. Se for o caso, você também pode fazer as correções necessárias posteriormente, por meio de softwares de edição, porém, isso já é uma missão para os mais experientes. </p> <br>
+            <p> Nem todas as câmeras contam com o ajuste de balanço de branco manual, mas, se ele existir, procure no manual o caminho do menu para chegar até ele. Com isso, é hora de “bater o branco”. </p> <br>
+            <p> Escolha uma superfície de cor cinza não muito escura e pouco refletiva (muitos fotógrafos preferem carregar um cartão cinza 18% especificamente para isso) e faça a nova medição. Na falta do cartão cinza, escolha uma superfície branca, porém, essa não é a melhor opção. </p> <br>
+          
+          <h1 id="04"> <span>▶</span> Foco </h1>
+            <p> Nem sempre uma foto sai completamente nítida, o que pode indicar que ela tenha ficado fora de foco. O foco pode ser uma arma poderosa para quem quer criar belas imagens. Escolhendo qual objeto vai ganhar destaque, você pode mudar completamente a sua fotografia. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/foco.jpg" alt="Imagem ilustrativa sobre Foco"> 
+              <p> Ele determina o <span>quão nítido o assunto principal estará na imagem</span>. </p>
+            </div>
+
+          <h2 class="h2-guia"> Como ajustar? </h2>
+            <p> O foco pode ser ajustado de forma manual, girando o anel de foco da lente até que você visualize o assunto completamente nítido na tela. Se preferir, você pode deixar a câmera no modo manual e o próprio equipamento vai interpretar o que precisa ganhar destaque na imagem. </p> <br>
+
+          <h1 id="05"> <span>▶</span> Profundidade de Campo </h1>
+            <p> A profundidade de campo, também conhecida como DOF (“depth of field” em inglês) é o que define o quanto os objetos próximos do foco da imagem também estarão focados. Quanto maior o DOF, mais coisas ao redor do objeto ficarão focados. Com um DOF menor, tudo ao redor do seu objeto principal poderá perder o foco. </p>
+            <div class="container-img-secao3"> 
+              <img class="img-secao03" src="img/guia/profundidade-de-campo.jpg" alt="Imagem ilustrativa sobre Profundidade de Campo"> 
+              <p> Ele determina a <span>intensidade do desfoque entre o objetivo focado e o que está fora de foco</span>, independente se o que está fora de foco é o fundo, ou um plano mais próximo da câmera. </p>
+            </div>
+
+          <h2 class="h2-guia"> Como controlar? </h2>
+            <p> Existem duas formas de controlar a profundidade de campo: mudando a abertura do diafragma e mudando a sua posição perante o objeto fotografado. Com uma maior abertura (f/1.4, por exemplo) o DOF será menor, o que deixará o fundo da imagem mais desfocado; com uma abertura menor, a profundidade de campo aumenta. </p> <br>
+            <p> Para lentes mais simples, com menor abertura, você pode aumentar a profundidade de campo ao se aproximar do objeto. Quanto mais perto do objeto fotografado, mais desfocado ficará o fundo, porém, o efeito não é tão impressionante quando com o ajuste feito pelo diafragma. </p> <br>
+
+          <h1 id="06"> <span>▶</span> É hora de praticar! </h1>
+            <p> Depois que você já conhecer bem o funcionamento da sua câmera, o primeiro passo é observar imagens que você considera bonitas e tentar entender como elas foram criadas. Isso ajuda a aumentar o domínio das técnicas e também auxilia na criação de uma linguagem própria. </p> <br>
+            <p> Em alguns grupos específicos de discussão ou redes como o Flickr, você encontra detalhes sobre as fotografias, como as configurações de ISO, velocidade e abertura utilizadas. Em alguns casos, os relatos do fotógrafo também podem detalhar o trabalho. </p> <br>
+            <p> Você pode tentar recriar imagens com a sua própria câmera, encontrando a sua própria versão daquilo que gosta. Após algum tempo, você será capaz de trilhar seu próprio caminho usando a criatividade ao somar técnicas e criar seu próprio estilo. </p>
+            
+            <a href="#"> <button class="botao"> Veja ideias e técnicas criativas de fotografia para experimentar </button> </a>
+        </section>
+        <!-- end section 2 -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

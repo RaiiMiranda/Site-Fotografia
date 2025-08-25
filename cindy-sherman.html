@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-fotografos.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex">
+      <!-- header -->
+      <header>
+        <nav class="navbar navbar-fotografos">
+          <a href="index.html"> INÍCIO </a>
+
+          <div class="dropdown">
+            <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+            <div class="dropdown-conteudo">
+              <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+            </div>
+          </div>
+        
+          <a href="tipos.html"> TIPOS </a>
+
+          <button id="btnMudar" onclick="toggleMode()"> 
+            <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+          </button>
+
+          <a href="mundo.html"> MUNDO </a>
+          <a href="guia.html">  GUIA  </a>
+          <a href="sobre.html"> SOBRE </a>
+        </nav>
+
+        <!-- menu-mobile -->
+        <div class="menu-mobile">
+          <input type="checkbox" id="menuToggle">
+          <label for="menuToggle"> ☰ </label>
+
+          <div class="nav-mobile">
+            <div class="container-botao-tema">
+              <button id="btnMudar" onclick="toggleMode()"> 
+                <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+              </button>
+              
+              <label for="menuToggle"> X </label>
+            </div>
+            
+            <ul>
+              <li><a href="index.html">    INÍCIO   </a></li>
+              <li><a href="historia.html"> HISTÓRIA </a></li>
+              <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+              <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+              <li><a href="tipos.html">    TIPOS    </a></li>
+              <li><a href="mundo.html">    MUNDO    </a></li>
+              <li><a href="guia.html">     GUIA     </a></li>
+              <li><a href="sobre.html">    SOBRE    </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end menu-mobile -->
+      </header>
+      <!-- end header -->
+
+      <!-- main-->
+      <!-- container-topo -->
+      <div class="container-topo">
+        <div class="container-esquerda">
+          <img src="img/famosos/individual/cindy-sherman/cindy2.jpg" alt="Retrato de Cindy Sherman">
+          <img src="img/icon-logo-camera.png" alt="">
+        </div>
+
+        <div class="container-direita">
+          <div class="direita-biografia">
+              <h1> Cindy Sherman </h1>
+              <p class="p-famosos-individual">
+                <b>Cindy Sherman é uma fotógrafa e artista americana</b>, amplamente reconhecida por seu trabalho inovador que explora <b>questões de identidade, gênero, representação e os estereótipos culturais</b>. Nascida em 19 de janeiro de 1954, em Glen Ridge, New Jersey, Sherman se formou na Escola de Artes Visuais de Nova York (SVA) no início dos anos 1970, onde desenvolveu um interesse pela fotografia e pelas artes visuais. <br> <br>
+                Sherman é mais conhecida por suas <b>séries de autorretratos</b> em que ela se transforma em diferentes personagens, adotando uma vasta gama de personas, desde figuras estereotipadas de mulheres na mídia até papéis históricos e literários. Suas imagens muitas vezes questionam a construção de identidade e o papel das mulheres na cultura visual, desafiando as expectativas tradicionais sobre o corpo feminino e a representação nas artes e na fotografia. <br> <br>
+                Uma de suas séries mais célebres, <b>"Untitled Film Stills" (1977–1980)</b>, apresenta Sherman em poses que remetem a cenas cinematográficas e de filmes noir, sugerindo um drama visual que remete a tropos femininos clássicos, como a mulher em perigo ou a femme fatale, mas com um tom crítico que desconstrói essas imagens. Ao longo de sua carreira, ela continuou a explorar temas de voyeurismo, violência e manipulação visual em suas séries subsequentes, como <b>"Centerfolds", "History Portraits" e "Society Portraits"</b>.
+              </p>
+          </div>
+          
+          <a href="#"> <button class="botao botao-fotografos"> Saiba mais sobre sua biografia </button> </a>
+        </div>
+      </div>
+      <!-- end container-topo -->
+
+      <!-- container-imagens -->
+      <div class="container-imagens">
+        <div class="container-3img">
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto2.webp" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto1.jpg" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="container-3img">
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto5.jpg" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto4.jpg" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/cindy-sherman/foto6.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end container-imagens -->
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/tema.js"></script>
+  </body>
+</html>

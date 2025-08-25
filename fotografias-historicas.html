@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-fotografias-historicas.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex"> 
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo" id="topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                  <a href="historia.html"> História da Fotografia </a>
+                  <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                  <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo-todos">
+            <h3> Fotografias Históricas </h3>
+            <div class="header-paragrafo">
+              <p> As fotografias históricas são <span>janelas para o passado</span>, capturando momentos significativos que moldaram nossa sociedade e cultura. Cada fotografia conta uma história, evocando emoções e reflexões sobre a trajetória da humanidade. </p>
+            </div>
+            <a href="guia.html"> <button class="botao"> Confira o nosso guia! </button> </a>
+          </div>
+
+          <img class="fundo-principal fundo-fotografias-historicas" src="img/historicas/fundo-fotografias-historicas.jpg" alt="Imagem de fundo de história ilustrativa">
+          
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <div class="fixed-seta" id="seta-historicas">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+
+      <!-- main -->
+      <main class="container-main">
+        <!-- section 1 -->
+        <section class="main-secao01">
+          <div class="secao01-titulo">
+            <h1> 15 fotos históricas e surpreendentes que você nunca viu antes! </h1>
+          </div>
+
+          <p> Ao longo da História, várias fotografias acabaram se tornando muito conhecidas pelo grande público, principalmente se tratando de assuntos como Guerra Mundial e outros desastres catastróficos que o Planeta Azul já enfrentou (vulcões, tsunamis, quedas de aviões etc.). </p> <br>
+          <p> Porém, algumas imagens apenas se tornam famosas depois de muitos anos, quando a galera finalmente reconhece a importância delas para a nossa época. Ao longo das últimas décadas, algumas fotos foram arquivadas e só agora é que elas vêm ganhando certo destaque — principalmente na web. </p> <br>
+          <p> Entre as imagens estão alguns momentos bem inusitados de algumas personalidades famosíssimas, por exemplo: você sabia que o Bill Gates já foi fotografado preso? Sabia que o Osama Bin Laden praticava judô? Já viu o Einstein de pantufas? Pois é, agora você vai ver tudo isso e muito mais! Confira: </p> <br>
+        </section>
+        <!-- end section 1 -->
+
+        <!-- section 2 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 1. O quarteto fantástico, The Beatles, se preparando para a emblemática foto da capa do disco Abbey Road, em 1969 </h1>
+            <div class="container-img-historicas-duas"> 
+              <img class="img-historicas-duas" src="img/historicas/the-beatles-abbey-road-preparacao.webp" alt="The Beatles se preparando para a emblemática foto da capa do disco Abbey Road"> 
+              <img class="img-historicas-duas" src="img/historicas/the-beatles-abbey-road.jpg" alt="Imagem da capa do disco Abbey Road"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 2 -->
+
+        <!-- section 3 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 2. Criança com pernas artificiais, em 1898 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/crianca-pernas-artificiais.webp" alt="Criança com pernas artificiais, em 1898"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 3 -->
+
+        <!-- section 4 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 3. “Making Of” do lendário seriado do Batman, em 1966 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/batman-making-of.webp" alt="'Making Of' do batman, em 1966"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 4 -->
+
+        <!-- section 5 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 4. Bill Gates, um dos homens mais ricos do mundo, preso por dirigir sem cateira de habilitação, em 1977 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/bill-gates-preso.webp" alt="Bill Gates preso, em 1977"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 5 -->
+
+        <!-- section 6 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 5. Muhammad Ali e Michael Jordan no vestiário do Chicago Bulls, em 1992 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/ali-jordan-vestiario.webp" alt="Muhammad Ali e Michael Jordan no vestiário, em 1992"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 6 -->
+
+        <!-- section 7 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 6. Estátua da Liberdade antes de chegar aos Estados Unidos </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/estatua-liberdade.webp" alt="Estátua da Liberdade antes de chegar aos Estados Unidos"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 7 -->
+
+        <!-- section 8 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 7. Jimi Hendrix e Mick Jagger no camarim, em 1969 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/hendrix-jagger-camarim.webp" alt="Jimi Hendrix e Mick Jagger no camarim, em 1969"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 8 -->
+
+        <!-- section 9 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 8. O ilustre Martin Luther King Jr. ao lado de um dos atores mais famosos do cinema, Marlon Brando </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/luther-king-brando.webp" alt="Martin Luther King Jr. ao lado de Marlon Brando"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 9 -->
+
+        <!-- section 10 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 9. Charlie Chaplin (sim, é ele mesmo!) e Albert Einstein </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/chaplin-einstein.webp" alt="Charlie Chaplin e Albert Einstein"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 10 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 10. O primeiro Mickey Mouse desenhado por Walt Disney </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/mickey-mouse.webp" alt="O primeiro Mickey Mouse desenhado por Walt Disney"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 11. Os polêmicos das antigas, Fidel Castro e Malcolm X, em 1960 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/castro-malcolm-x.webp" alt="Fidel Castro e Malcolm X, em 1960"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 12. Robin Williams dando uma de cheerleader, em 1980 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/williams-cheerleader.webp" alt="Robin Williams dando uma de cheerleader, em 1980"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 13. Bruce Lee na balada... Quer dizer, no baile </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/lee-balada.webp" alt="Bruce Lee na balada... Quer dizer, no baile"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 14. Última foto que foi tirada do Titanic antes do naufrágio, em 1912 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/ultima-foto-titanic.webp" alt="Última foto que foi tirada do Titanic antes do naufrágio, em 1912"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+
+        <!-- section 11 -->
+        <section class="main-secao03 main-fotografias-historicas">
+          <div class="container-historicas">
+            <h1> 15. O primeiro computador na Inglaterra, em 1950 </h1>
+            <div class="container-img-historicas"> 
+              <img class="img-historicas" src="img/historicas/primeiro-computador.webp" alt="O primeiro computador na Inglaterra, em 1950"> 
+            </div>
+          </div>
+        </section>
+        <!-- end section 11 -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

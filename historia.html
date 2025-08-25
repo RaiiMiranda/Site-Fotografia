@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-historia.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex"> 
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo" id="topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                  <a href="historia.html"> História da Fotografia </a>
+                  <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                  <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo-todos">
+            <h3> História da Fotografia </h3>
+            <div class="header-paragrafo">
+              <p> A história da fotografia começa no século XIX, quando os primeiros experimentos com a <span>captura de imagens revolucionaram</span> a forma como documentamos o mundo. </p>
+            </div>
+            <a href="guia.html"> <button class="botao botao-todos"> Confira o nosso guia! </button> </a>
+          </div>
+
+          <img class="fundo-principal fundo-historia" src="img/historia/fundo-historia.jpg" alt="Imagem de fundo de história ilustrativa">
+          
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <!-- seta-voltar -->
+      <div class="fixed-seta" id="seta-historia">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+      <!-- end seta-voltar -->
+
+      <!-- main -->
+      <main class="container-main main-historia">
+        <!-- section 1 -->
+        <section class="main-secao01">
+          <div class="secao01-titulo">
+            <h1> Linha do Tempo </h1>
+          </div>
+
+          <!-- 1° linha -->
+          <div class="container-cards-historia">
+            <div class="card-historia card1">
+              <img src="img/historia/300ac.png" alt="">
+              <div class="card-texto">
+                <h2> 300 a.C. </h2>
+                <p> Aristóteles usa a <span>primeira camera obscura</span> para estudar eclipses solares. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card2">
+              <img src="img/historia/1521.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1521 </h2>
+                <p> <span>Primeira publicação sobre a camera obscura</span> na Europa. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card3">
+              <img src="img/historia/1777.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1777 </h2>
+                <p> Carl Wilhelm Scheele publicou seu tratado sobre <span>sais de prata</span> e sua <span>reação à luz</span>. </p>
+              </div>
+            </div>
+          </div>
+          <!-- end 1° linha -->
+
+           <!-- 2° linha -->
+           <div class="container-cards-historia">
+            <div class="card-historia card1">
+              <img src="img/historia/1826.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1826 </h2>
+                <p> <span>Primeira imagem capturada</span> por Nicephore Niépce que foi chamada de "point de vue". </p>
+              </div>
+            </div>
+
+            <div class="card-historia card2">
+              <img src="img/historia/1839.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1839 </h2>
+                <p> <span>Primeira demonstração pública do daguerreótipo</span> na Península Ibérica. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card3">
+              <img src="img/historia/1850.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1850 </h2>
+                <p> Gustave Le Gray cria o <span>colódio úmido</span> que é um procedimento fotográfico. </p>
+              </div>
+            </div>
+          </div>
+          <!-- end 2° linha -->
+
+           <!-- 3° linha -->
+           <div class="container-cards-historia">
+            <div class="card-historia card1">
+              <img src="img/historia/1861.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1861 </h2>
+                <p> <span>Primeira fotografia colorida</span> de James Maxwell. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card2">
+              <img src="img/historia/1864.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1864 </h2>
+                <p> <span>Primeiro uso de flash</span> à base de magnésio. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card3">
+              <img src="img/historia/1871.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1871 </h2>
+                <p> Os <span>"Pratos secos"</span> são inventados. </p>
+              </div>
+            </div>
+          </div>
+          <!-- end 3° linha -->
+
+           <!-- 4° linha -->
+           <div class="container-cards-historia">
+            <div class="card-historia card1">
+              <img src="img/historia/1889.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1889 </h2>
+                <p> <span>Primeiro filme flexível e transparente</span> na forma de tiras de nitrato de celulose. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card2">
+              <img src="img/historia/1903.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1903 </h2>
+                <p> <span>Primeira placa colorida</span> da família Lumière. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card3">
+              <img src="img/historia/1920.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1920 </h2>
+                <p> Entra para o mercado a <span>"Leica"</span>, <span>primeira câmera prática de 35 mm</span>, projetada por Oskar Barnack. </p>
+              </div>
+            </div>
+          </div>
+          <!-- end 4° linha -->
+
+           <!-- 5° linha -->
+           <div class="container-cards-historia">
+            <div class="card-historia card1">
+              <img src="img/historia/1930.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1930 </h2>
+                <p> Johann Ostermeyer inventa <span>flashes de lâmpadas</span> que substituíram o pó de magnésio. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card2">
+              <img src="img/historia/1936.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1936 </h2>
+                <p> A Agfa lançou o filme Agfacolor-Neu, que foi o <span>primeiro filme colorido moderno</span> com camadas sensíveis à cor integradas. </p>
+              </div>
+            </div>
+
+            <div class="card-historia card3">
+              <img src="img/historia/1975.jpg" alt="">
+              <div class="card-texto">
+                <h2> 1975 </h2>
+                <p> <span>Primeira câmera digital</span> da história inventada pelo engenheiro da Kodak, Steven Sasson. </p>
+              </div>
+            </div>
+          </div>
+          <!-- end 5° linha -->
+        </section>
+        <!-- end section 1 -->
+
+        <!-- section 3 -->
+        <section class="main-secao03">
+          <h1> Como originou a fotografia? </h1>
+
+          <p> Em primeiro lugar, é interessante entender que a palavra <b>“fotografia”</b> vem do grego, e pode ser traduzida como <b>desenho de luz e contraste</b>. Além disso, foi na antiguidade que as primeiras experiências fotográficas de químicos e alquimistas foram feitas! </p> <br>
+          <p> Foi também na Grécia, que a <b>câmara obscura</b> foi criada! Esse era um aparelho capaz de criar imagens invertidas. Por esse motivo, ele é <b>considerado o precursor das câmeras fotográficas!</b> O crédito do descobrimento dessa câmera é comumente atribuído a <b>Aristóteles</b>. Depois disso, esse aparelho foi sendo ajustado e usado por artistas e cientistas até a invenção da fotografia. </p> <br>
+          <p> Assim, no ano de <b>1604</b>, o cientista italiano, <b>Angelo Sala</b>, constatou que um composto de prata escurecia ao ser exposto ao sol. Por esse motivo, ele acreditava que o calor era responsável por esse fenômeno. </p> <br>
+          <p> A seguir, já no ano de <b>1724</b>, <b>Johann Heinrich Schulze</b> verificou que o que ocorria de fato era que a prata halógena se convertia em prata metálica. Isso acabava fazendo com que o composto escurecesse. </p> <br>
+          <p> Foi depois dessas duas descobertas que, em <b>1826</b>, o inventor francês, <b>Joseph Nicéphore Niépce</b>, conseguiu produzir o que foi considerado a <b>primeira fotografia</b>. Para registrar a imagem foram necessárias oito horas de exposição ao sol! Ao final desse período, a primeira fotografia se formou sobre uma superfície de estanho. </p> <br>
+          <p> Anos depois um outro inventor francês chamado <b>Daguerre</b> conseguiu reduzir o tempo de revelação da fotografia de horas para alguns minutos. Ele conseguiu isso através de um vapor de mercúrio. Seu aparelho ficou conhecido e marcado na história como <b>“daguerreótipo”</b>. Esse equipamento foi apresentado à Academia de Ciências de Paris em 1839, ano que entrou para a história como <b>um marco para a fotografia</b>. </p> <br>
+          <p> Depois disso, em <b>1840</b>, o químico inglês <b>John F. Goddard (1795-1866)</b>, criou lentes com maior abertura. A partir disso, no ano seguinte, o escritor e cientista inglês <b>William Henry Fox Talbot</b> criou o <b>“calótipo”</b>, aperfeiçoando o processo de fixação de imagens. </p> <br>
+          <p> Depois disso, começaram as tentativas de se produzir uma <b>fotografia colorida</b>. Algumas pessoas até conseguiram um efeito parecido, mas a verdade é que essas fotografias não fixaram as cores da maneira correta. Algumas, inclusive, sumiram após algumas horas. </p> <br>
+          <p> Foi apenas em <b>1861</b>, que o físico <b>James Clerk Maxwell</b> conseguiu obter a <b>primeira fotografia colorida permanente</b>. A empresa Kodak popularizou a comercialização das câmeras fotográficas em 1888. Entretanto, foi apenas em <b>1907</b> que os <b>filmes coloridos chegaram ao mercado!</b> </p> <br>
+        </section>
+        <!-- end section 3 -->
+
+        <!-- section 3 -->
+        <section class="main-secao03">
+          <h1> Como a fotografia evoluiu com o tempo? </h1>
+
+          <p> Podemos dizer que, a <b>partir do século XIX</b>, a fotografia começou a fazer parte do dia a dia das pessoas. Entretanto, esse era um serviço reservado apenas aos fotógrafos profissionais, que trabalhavam em estúdios,  e que conseguiam comprar um aparelho. </p> <br>
+          <p> Depois disso, em <b>1901</b>, quando a empresa americana <b>Kodak lançou a Brownie-Kodak</b>, uma câmera comercial e popular. A mesma empresa, em <b>1935</b>, introduziu no mercado o <b>Kodachrome</b>, o pioneiro na linha de filmes coloridos. Da mesma maneira, a também americana <b>Polaroid</b> cria a fotografia colorida instantânea em <b>1963</b>. </p> <br>
+          <p> Um dos marcos mais revolucionários com certeza foi o surgimento da <b>câmera digital</b>, novidade lançada pela Kodak no ano de <b>1990</b>! Logo em seu lançamento, o preço dessa câmera era inacessível para a maior parte da população, mas o produto foi se popularizando com o tempo.  </p> <br>
+          <p> Sendo assim, cerca de dez anos após o seu lançamento, a câmera digital se tornou um produto de consumo em massa. Isso aconteceu pois, mais uma vez, as tecnologias foram tornando-se cada vez mais acessíveis à população.  </p> <br>
+          <p> O surgimento da câmera digital também foi o pontapé inicial para a criação de tecnologias cada vez mais modernas no que diz respeito à fotografia. Isso contribuiu para o  aparecimento e aprimoramento de outros aspectos relevantes ao mundo da fotografia. </p> <br>
+          <p> Todo esse percurso levou a realidade que conhecemos hoje, onde é possível arquivar um alto volume de imagens no computador ou na nuvem. Assim, conseguimos registrar e guardar momentos sem que as fotografias percam a qualidade com a passagem do tempo. </p> <br>
+        </section>
+        <!-- end section 3 -->
+
+        <!-- section 3 -->
+        <section class="main-secao03">
+          <h1> A História da Fotografia no Brasil </h1>
+
+          <p> Em 17 de janeiro de 1840 o Brasil conhecia a daguerreotipia, era o incio da fotografia no país. O “Jornal do Comércio” informa sobre a última novidade tecnológica surgida na Europa que acabara de chegar ao Brasil: </p> <br>
+          <p class="italico"> <b> "É preciso ter visto a cousa com os seus próprios olhos para se fazer ideia da rapidez e do resultado da operação. Em menos de 9 minutos, o chafariz do Largo do Paço, a Praça do Peixe, o Mosteiro de São Bento e todos os objetos circunstantes se achavam reproduzidos com tal fidelidade, precisão e minuciosidade, que bem se via que a cousa tinha sido feita pela mão da natureza, e quase sem a intervenção do artista"....</b> </p> <br>
+          
+          <div class="container-img-secao3"> 
+            <img class="img-secao03" src="img/historia/fotografia-brasil.jpg" alt="Imagem de uma fotografia jornalística"> 
+            <p> A primeira fotografia do Brasil. Por <span>Louis Compte</span> em <span>1840</span>. </p>
+          </div>
+          <p> A noticia referia-se ao dia <b>16 de janeiro de 1840</b>, quando o abade <b>Louis Compte</b>, capelão de um navio-escola francês (corveta franco-belga L’Orientale) que aportou de passagem pelo Rio de Janeiro, trouxe a novidade de Paris para a cidade, introduzindo a Daguerreotipia no país. </p> <br>
+          <p> Além da primeira imagem de processo fotográfico produzida na América do Sul a imagem de Compte é uma das primeiras, em toda a história da fotografia, em que aparecem, com nitidez, pessoas e animais em um logradouro público. </p> <br>
+          <p> No mesmo ano, Abade  Louis Compte dava uma demonstração especial de um daguerreótipo para o Imperador D .Pedro II, registrando alguns aspectos da fachada do Paço e algumas vistas ao seu redor. </p> <br>
+          <p> Desde o dia que Abade Louis Compte registrou as primeiras imagens no Rio de Janeiro, D Pedro II se interessou profundamente pela fotografia, sendo o primeiro fotografo brasileiro com menos que 15 anos de idade. </p> <br>
+          <p> Tornou-se praticante e colecionador da fotografia. Trouxe os melhores fotógrafos da Europa, patrocinou grande exposições, promoveu a arte fotográfica brasileira e difundiu a nova técnica pelo país, sendo uma peça importante na história da fotografia no Brasil. </p> <br>
+        </section>
+        <!-- end section 3 -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

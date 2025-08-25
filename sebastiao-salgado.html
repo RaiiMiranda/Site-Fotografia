@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-fotografos.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex">
+      <!-- header -->
+      <header>
+        <nav class="navbar navbar-fotografos">
+          <a href="index.html"> INÍCIO </a>
+
+          <div class="dropdown">
+            <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+            <div class="dropdown-conteudo">
+              <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+            </div>
+          </div>
+        
+          <a href="tipos.html"> TIPOS </a>
+
+          <button id="btnMudar" onclick="toggleMode()"> 
+            <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+          </button>
+
+          <a href="mundo.html"> MUNDO </a>
+          <a href="guia.html">  GUIA  </a>
+          <a href="sobre.html"> SOBRE </a>
+        </nav>
+
+        <!-- menu-mobile -->
+        <div class="menu-mobile">
+          <input type="checkbox" id="menuToggle">
+          <label for="menuToggle"> ☰ </label>
+
+          <div class="nav-mobile">
+            <div class="container-botao-tema">
+              <button id="btnMudar" onclick="toggleMode()"> 
+                <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+              </button>
+              
+              <label for="menuToggle"> X </label>
+            </div>
+            
+            <ul>
+              <li><a href="index.html">    INÍCIO   </a></li>
+              <li><a href="historia.html"> HISTÓRIA </a></li>
+              <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+              <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+              <li><a href="tipos.html">    TIPOS    </a></li>
+              <li><a href="mundo.html">    MUNDO    </a></li>
+              <li><a href="guia.html">     GUIA     </a></li>
+              <li><a href="sobre.html">    SOBRE    </a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- end menu-mobile -->
+      </header>
+      <!-- end header -->
+
+      <!-- main-->
+      <!-- container-topo -->
+      <div class="container-topo">
+        <div class="container-esquerda">
+          <img src="img/famosos/individual/sebastiao-salgado/sebastiao2.png" alt="Retrato de Sebastião Salgado">
+          <img src="img/icon-logo-camera.png" alt="">
+        </div>
+
+        <div class="container-direita">
+          <div class="direita-biografia">
+              <h1> Sebastião Salgado </h1>
+              <p class="p-famosos-individual">
+                <b>Sebastião Salgado é um dos mais renomados fotógrafos brasileiros</b>, conhecido por seus poderosos ensaios fotográficos que abordam <b>temas sociais, ambientais e humanitários</b>. Nascido em 8 de fevereiro de 1944, em Aimorés, Minas Gerais, Salgado inicialmente estudou economia e trabalhou como economista antes de se dedicar à fotografia, uma transição que ocorrerá na década de 1970. <br> <br>
+                Ao longo de sua carreira, Salgado se destacou por seu olhar humanista e engajado, criando imagens impactantes que retratam a dignidade e as dificuldades das populações mais vulneráveis ao redor do mundo. Suas fotografias são marcadas por uma <b>profundidade emocional, composição rigorosa e uma forte estética em preto e branco</b>. Entre seus projetos mais conhecidos estão <b>"Trabalhadores" (1993)</b>, uma série sobre as condições de trabalho em várias partes do mundo, e <b>"Êxodos" (2000)</b>, que documenta as crises de refugiados e deslocados devido a conflitos e desastres naturais. <br> <br>
+                Premiado com diversos prêmios internacionais e com exposições em renomados museus ao redor do mundo, Sebastião Salgado é amplamente considerado um dos grandes mestres da fotografia contemporânea. Seu trabalho não só documenta o sofrimento humano, mas também celebra a resistência, a solidariedade e a beleza do ser humano em meio a adversidades.
+              </p>
+          </div>
+          
+          <a href="#"> <button class="botao botao-fotografos"> Saiba mais sobre sua biografia </button> </a>
+        </div>
+      </div>
+      <!-- end container-topo -->
+
+      <!-- container-imagens -->
+      <div class="container-imagens">
+        <div class="container-3img">
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto1.webp" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto2.webp" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto3.webp" alt="">
+          </div>
+        </div>
+
+        <div class="container-3img">
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto4.webp" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto5.webp" alt="">
+          </div>
+
+          <div class="container-img-texto">
+            <img src="img/famosos/individual/sebastiao-salgado/foto6.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- end container-imagens -->
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/tema.js"></script>
+  </body>
+</html>

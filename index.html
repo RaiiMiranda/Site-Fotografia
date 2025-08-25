@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex">
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo" id="topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo">
+            <p> A Arte da Fotografia </p>
+          </div>
+
+          <img class="fundo-principal" src="img/index/fundo-index.jpg" alt="imagem de paisagem de montanhas">
+          <div class="header-gradiente"></div>
+
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <div class="fixed-seta" id="seta">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+
+      <!-- main -->
+      <main class="container-main">
+        <!-- section 1 -->
+        <section class="main-secao01">
+          
+
+          <h1> O que é a Arte da Fotografia? </h1>
+          <p>
+            A <b>fotografia</b> é uma forma de arte que permite capturar e registrar momentos, emoções e histórias por meio de imagens. É uma maneira de expressar a criatividade 
+            e a visão do fotógrafo, que utiliza uma câmera para capturar a luz e transformá-la em uma imagem.
+          </p>
+
+          <h1> A Importância da Fotografia </h1>
+          <p>
+            A <b>fotografia é uma linguagem universal</b> que pode transmitir sentimentos, emoções e/ou até revolta que muitas vezes não podem ser transmitidos por palavras.
+            Quando fotografamos passamos a observar as pessoas e a natureza de uma maneira diferente, e a partir daí, nossa visão do mundo torna-se mais sensível e crítica. <br>
+            Em meio a um mar de informações que circulam todos os dias, as fotografias têm a habilidade única de captar a atenção, gerar empatia 
+            e transmitir mensagens de maneira poderosa e inconfundível.
+          </p>
+
+          <h1> O Impacto da Fotografia na Sociedade </h1>
+          <p>
+            A <b>fotografia tem um impacto profundo na sociedade</b>, servindo como um meio de <b>documentação histórica</b> que preserva momentos significativos para gerações futuras. 
+            Ela atua como forma de <b>expressão artística</b>, permitindo que artistas transmitam suas visões e emoções, além de desempenhar um papel crucial no jornalismo, informando e 
+            moldando a opinião pública. Imagens poderosas podem gerar empatia e conscientização sobre questões sociais, desafiando estereótipos e promovendo narrativas diversas. 
+          </p> <br>
+          <p>
+            Com a ascensão das redes sociais, a fotografia transformou a maneira como nos conectamos e compartilhamos experiências, influenciando também o marketing e a publicidade. 
+            Além disso, ela desempenha um papel vital na <b>preservação cultural</b>, documentando tradições e estilos de vida, contribuindo para a diversidade cultural em um mundo em 
+            constante mudança.
+          </p>
+          <a href="historia.html"> <button class="botao botao-topo"> Saiba mais sobre sua história </button> </a> <br> <br>
+        </section>
+        <!-- end section 1 -->
+
+        <!-- section 2 -->
+        <section class="main-secao01 main-secao-form">
+          <!-- formulário -->
+          <form class="container-formulário">
+            <!-- form-esquerda -->
+            <div class="form-esquerda">
+              <h1> Junte-se à Nossa Comunidade Fotográfica! </h1>
+            
+              <label> Nome Completo: <span>*</span> </label>
+              <input class="caixa-input" type="text" name="nome" placeholder="Nome" required> <br>
+
+              <label> E-Mail: <span>*</span> </label>
+              <input class="caixa-input" type="email" name="email" placeholder="Endereço de Email" required> <br>
+
+              <label> Nascimento: <span>*</span> </label>
+              <input class="caixa-input" type="date" name="nascimento" min="1900-01-01" max="2006-12-12" required> <br>
+
+              <label> Nível de Experiência: <span>*</span> </label>
+              <select class="caixa-input" required>
+                <option value=""> Selecione... </option>
+                <option value="sem-experiencia"> Sem experiência </option>
+                <option value="iniciante"> Iniciante </option>
+                <option value="intermediaria"> Intermediária </option>
+                <option value="avancada"> Avançada </option>
+              </select> <br>
+              
+              <table>
+                <label> Interesses de Conteúdo: </label>
+                
+                <tr>
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td class="coluna-texto"><label> Dicas para Iniciantes </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Fotografia de Moda </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Enventos </label></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td class="coluna-texto"><label> Macro Fotografia </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Fotografia de Rua </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Retrato </label></td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td class="coluna-texto"><label> Fotografia de Alimentos </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Edição de Imagens </label></td>
+
+                  <td><input type="checkbox" name="interesses"></td>
+                  <td><label> Paisagem </label></td>
+                </tr>
+              </table>
+
+              <!-- interesses-mobile -->
+              <div class="interesses-mobile">
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Retrato </label>
+                </div>
+
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Paisagem </label>
+                </div>
+                  
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Fotografia de Rua </label>
+                </div>
+
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Macro Fotografia </label>
+                </div>
+                
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Astrofotografia </label>
+                </div>
+
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Dicas para Iniciantes </label>
+                </div>
+                  
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Fotografia de Alimentos </label>
+                </div>
+
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Edição de Imagens </label>
+                </div>
+
+                <div class="flex-form">
+                  <input type="checkbox" name="interesses">
+                  <label> Fotografia de Moda </label>
+                </div>
+              </div>
+              <!-- end interesses-mobile -->
+
+              <label class="outro"> Outro: </label>
+              <input class="caixa-input" type="text" name="nome" placeholder="Outro conteúdo" maxlength="60"> <br>
+
+              <label> Sugestões para a Comunidade: </label>
+              <textarea name="sugestoes" placeholder="Mensagem" rows="8" cols="40" maxlength="620"></textarea> <br>
+
+              <div class="container-consentimento">
+                <label> Eu concordo em receber e-mails com novidades e atualizações sobre fotografia. </label>
+                <input type="checkbox" name="consentimento">
+              </div>
+
+              <input class="form-botao-enviar" type="submit" name="botao" value="Enviar">
+            </div>
+            <!-- end form-esquerda -->
+
+            <!-- form-direita -->
+            <div class="form-direita">
+              <div class="divisao01 divisao01-index">
+                <img src="img/sobre/telefone.png" alt="ícone telefone">
+                <h4> Telefone </h4>
+                <a class="link-index" href="#"> (12) 98765-4321 </a>
+              </div>
+
+              <div class="divisao02 divisao02-index">
+                <img src="img/sobre/email.png" alt="ícone email">
+                <h4> Email </h4>
+                <a class="link-index" href="#"> contato@fotografiaemfoco.com </a>
+              </div>
+
+              <div class="form-botoes">
+                <a href="#"> <img class="redes-sociais" src="img/sobre/linkedin.png"  alt="Link linkedin Fotografia em Foco"> </a>
+                <a href="#"> <img class="redes-sociais" src="img/sobre/github.png"    alt="Link github Fotografia em Foco"> </a>
+                <a href="#"> <img class="redes-sociais" src="img/sobre/youtube.png"   alt="Link youtube Fotografia em Foco"> </a>
+                <a href="#"> <img class="redes-sociais" src="img/sobre/instagram.png" alt="Link instagram Fotografia em Foco"> </a>
+              </div>
+            </div>
+            <!-- end form-direita -->
+          </form>
+          <!-- end formulário -->
+        </section>
+        <!-- section 2 -->
+
+        <!-- section 3 -->
+        <section class="main-secao03">
+          <h1> Diferença entre Fotografia Tradicional e Fotografia Artística </h1>
+          <p> A <b>fotografia tradicional ou jornalística</b> cumpre o papel de retratar a realidade e o figurativismo das imagens, visando 
+            combinar as técnicas de fotografia e a capacidade descritiva das imagens com o olhar crítico e caráter informativo do jornalismo. </p>
+          <div class="container-img-secao3"> 
+            <img class="img-secao03" src="img/index/fotografia-jornalistica.jpg" alt="Imagem de uma fotografia jornalística"> 
+            <p> VP-elect Lyndon Johnson chatting with President-elect John F. Kennedy and Jackie Kennedy at the president's inaugural ball. 1961. (Photo: <span>Alfred Eisenstaedt / LIFE</span>) </p>
+          </div>
+
+          <p>Já a <b>artística</b> é mais conceitual e abstrata, ou seja, busca representar a beleza de modo intuitivo, para, assim, despertar a sensibilidade e a emoção das pessoas. </p>
+          <div class="container-img-secao3"> 
+            <img class="img-secao03" src="img/index/fotografia-artistica.jpg" alt="Imagem de uma fotografia artística">
+            <p>Artistic Photography (sandstorm). (Photo: <span>Mahmoud Khaled</span>)</p>
+          </div>
+
+          <p> Cada tipo de fotografia tem suas próprias características e técnicas, permitindo que os fotógrafos capturem momentos únicos e especiais de uma forma específica. </p>
+
+          <a href="tipos.html"> <button class="botao"> Saiba mais sobre seus tipos </button> </a>
+        </section>
+        <!-- end section 3 -->
+
+        <!-- section 4 -->
+        <section class="main-secao02">
+          <div class="container-frases">
+            <p> “Quando as palavras não ficarem claras, vou me concentrar nas fotografias. Quando as imagens se tornarem inadequadas, ficarei contente com o silêncio.” </p>
+            <a href="ansel-adams.html"> <h3> – Ansel Adams </h3> </a>
+          </div>
+
+          <div class="container-frases">
+            <p> "As coisas acontecem na sua frente. Esse é talvez o aspecto mais maravilhoso e misterioso da fotografia." </p>
+            <a href="annie-leibovitz.html"> <h3> – Annie Leibovitz </h3> </a>
+          </div>
+
+          <div class="container-frases">
+            <p> "As melhores imagens são as que mantêm sua força e impacto ao longo dos anos, independentemente do número de vezes que são vistos." </p>
+            <a href="anne-geddes.html"> <h3> – Anne Geddes </h3> </a>
+          </div>
+        </section>
+        <!-- end section 4 -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

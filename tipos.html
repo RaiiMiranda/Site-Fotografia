@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotografia em Foco </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-tipos.css">
+    <link rel="stylesheet" href="css/style-menu-mobile.css">
+    <link rel="icon" href="img/icon-logo-camera.png">
+  </head>
+
+  <body>
+    <!-- flex -->
+    <div class="flex">
+      <!-- header -->
+      <header>
+        <!-- header-topo -->
+        <div class="header-topo">
+          <nav class="navbar" id="nav">
+            <a href="index.html"> INÍCIO </a>
+
+            <div class="dropdown">
+              <a class="a-historia" href="historia.html"> HISTÓRIA </a>
+
+              <div class="dropdown-conteudo">
+                <a href="historia.html"> História da Fotografia </a>
+                <a href="fotografias-historicas.html"> Fotografias Históricas </a>
+                <a href="fotografos-famosos.html"> Fotógrafos Famosos </a>
+              </div>
+            </div>
+          
+            <a href="tipos.html"> TIPOS </a>
+            
+            <button id="btnMudar" onclick="toggleMode()"> 
+              <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+            </button>
+
+            <a href="mundo.html"> MUNDO </a>
+            <a href="guia.html">  GUIA  </a>
+            <a href="sobre.html"> SOBRE </a>
+          </nav>
+        
+          <div class="header-titulo-todos">
+            <h3> Tipos de Fotografia </h3>
+            <div class="header-paragrafo">
+              <p> Existem inúmeros <span>tipos de fotografias</span> e <span>gêneros</span> e podemos categoriza-los de várias formas. Quando falamos em tipos de fotografias é a mesma coisa que enquadrar as fotos em um assunto ou técnica. </p>
+            </div>
+            <a href="guia.html"> <button class="botao botao-todos"> Confira o nosso guia! </button> </a>
+          </div>
+
+          <img class="fundo-principal fundo-tipos" src="img/tipos/fundo-tipos.jpg" alt="imagem de cima das nuvens">
+
+          <!-- menu-mobile -->
+          <div class="menu-mobile">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle"> ☰ </label>
+
+            <div class="nav-mobile">
+              <div class="container-botao-tema">
+                <button id="btnMudar" onclick="toggleMode()"> 
+                  <img class="botao-tema" src="img/tema-dark-light.png" alt="">
+                </button>
+                
+                <label for="menuToggle"> X </label>
+              </div>
+              
+              <ul>
+                <li><a href="index.html">    INÍCIO   </a></li>
+                <li><a href="historia.html"> HISTÓRIA </a></li>
+                <li><a href="fotografias-historicas.html"> FOTOGRAFIAS </a></li>
+                <li><a href="fotografos-famosos.html"> FOTÓGRAFOS </a></li>
+                <li><a href="tipos.html">    TIPOS    </a></li>
+                <li><a href="mundo.html">    MUNDO    </a></li>
+                <li><a href="guia.html">     GUIA     </a></li>
+                <li><a href="sobre.html">    SOBRE    </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end menu-mobile -->
+        </div>
+        <!-- end header-topo -->  
+      </header>
+      <!-- end header -->
+
+      <div class="fixed-seta" id="seta-tipos">
+        <a href="#topo"> <img src="img/seta-para-cima.png" alt="imagem de uma seta para cima"> </a>
+      </div>
+
+      <!-- main -->
+      <main class="container-main" id="topo">
+        <!-- section 1 -->
+        <section class="main-secao01 main-topo">
+          <div class="secao01-titulo">
+            <h1> Principais Tipos de Fotografia </h1> <br>
+          </div>
+          <p>
+            É interessante ter em mente que buscar informações sobre os tipos de fotografia que são as <b>tendências do setor</b>, <b>frequentar workshops</b>, <b>participar de palestras e cursos</b>, 
+            vão te tornar bom tanto na teoria quanto na prática. Geralmente, imagina-se que a fotografia se resume a retratos, paisagens ou fotojornalismo mas, na verdade, ela pode 
+            se subdividir em muito mais tipos. <br> <br>
+            Confira abaixo alguns dos principais tipos de fotografia:
+          </p>
+
+          <div class="container-links">
+            <div class="caixa">
+                <a href="#01">01 - Fotografia Abstrata</a> <br>
+                <a href="#02">02 - Fotografia Aérea</a> <br>
+                <a href="#03">03 - Fotografia de Arquitetura</a> <br>
+                <a href="#04">04 - Astrofotografia</a> <br>
+                <a href="#05">05 - Fotografia Preto e Branco</a> <br>
+            </div>
+
+            <div class="caixa">
+                <a href="#06">06 - Fotografia Comercial</a> <br>
+                <a href="#07">07 - Fotografia Documental</a> <br>
+                <a href="#08">08 - Fotografia Dupla Exposição</a> <br>
+                <a href="#09">09 - Fotografia Editorial</a> <br>
+                <a href="#10">10 - Fotografia de Evento</a> <br>
+            </div>
+
+            <div class="caixa">
+                <a href="#11">11 - Fotografia de Família</a> <br>
+                <a href="#12">12 - Fotografia de Moda</a> <br>
+                <a href="#13">13 - Fotografia Analógica</a> <br>
+                <a href="#14">14 - Fotografia Fine Art</a> <br>
+                <a href="#15">15 - Fotografia Infravermelha</a> <br>
+            </div>
+          </div>
+        </section>
+        <!-- end section 1 -->
+        
+        <!-- ★ section -->
+        <section class="main-tipos" id="01">
+          <div class="container-texto">
+            <h1> 01 - Fotografia Abstrata </h1>
+            <p> A fotografia abstrata, conhecida como fotografia experimental ou conceitual, vai além das representações comuns de objetos e pode ser criada ou editada propositalmente com objetivo de produzir uma aparência irreal de objetos reais. Geralmente, não é possível ver coisas específicas em imagens abstratas, partindo da ideia de que os fotógrafos que trabalham nessa área visam expressar sua visão artística ou até mesmo ilustrar o conceito, em vez de transmitir itens à sua frente. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos" src="img/tipos/abstrata.jpg" alt="Fotografia Abstrata">
+          </div>
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="02">
+          <div class="container-texto reverse-texto">
+            <h1> 02 - Fotografia Aérea </h1>
+            <p> Basicamente qualquer foto feita do ar pode ser considerada fotografia aérea. No passado, imagens de ângulo alto eram consideradas fotografias aéreas. Hoje em dia, com a chegada de drones de alta qualidade, esse gênero está mais associado à fotografia com drones.
+                A fotografia aérea não se limita apenas a imagens de paisagens. Em alguns gêneros, os fotógrafos já estão fazendo fotos de cima, desde a fotografia comercial até a fotografia de casamento, para conseguir uma nova perspectiva e criar visuais incríveis. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos reverse-imagem" src="img/tipos/aerea.jpg" alt="Fotografia Aérea">
+          </div>
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="03">
+          <div class="container-texto">
+            <h1> 03 - Fotografia de Arquitetura </h1>
+            <p> Ao contrário da fotografia abstrata, a fotografia de arquitetura visa capturar a representação exata do assunto. Fotografias de interiores e exteriores de edifícios, assim como elementos arquitetônicos interessantes, pontes e paisagens urbanas, podem fazer parte desse gênero. Os fotógrafos tendem a enfatizar linhas, formas, materiais, cores e partes visualmente mais atraentes de uma estrutura.
+                Há dois subtipos de fotografia de arquitetura. A primeira é a fotografia imobiliária, que visa fotografar casas à venda. A segunda é chamada de exploração urbana, que foca em lugares abandonados e perdidos. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos" src="img/tipos/arquitetura.jpg" alt="Fotografia de Arquitetura">
+          </div>
+        </section>
+        <!-- ★ end section -->
+
+         <!-- section reverse -->
+         <section class="main-tipos reverse-container" id="04">
+          <div class="container-texto reverse-texto">
+            <h1> 04 - Astrofotografia </h1>
+            <p> A astrofotografia registra objetos astronômicos e eventos celestes, como estrelas, meteoros, planetas, galáxias, eclipses lunares ou solares e até mesmo buracos negros. Os responsáveis por essas imagens são os cientistas que trabalham em observatórios astronômicos. Eles capturam essas fotos com a ajuda de telescópios.
+                Também pode ser considerada astrofotografia, a fotografia noturna que consegue capturar áreas do céu noturno visíveis a olho nu. Para conseguir essas imagens é preciso equipamentos adequados, configurações corretas da câmera e o conhecimento de técnicas especiais. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos reverse-imagem" src="img/tipos/astrofotografia.jpg" alt="Astrofotografia">
+          </div>
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="05">
+          <div class="container-texto">
+            <h1> 05 - Fotografia Preto e Branco </h1>
+            <p> A fotografia em preto e branco é considerada um tipo de fotografia monocromática que possui apenas tons de cinza e nenhuma outra cor. Os tons monocromáticos tornam tudo mais profundo e ajudam a criar fotos atemporais e elegantes. Fotos em preto e branco podem ser obtidas de algumas maneiras, como por exemplo: câmeras monocromáticas, configurações adequadas ou edição de uma imagem colorida.
+                As configurações monocromáticas também enfatizam mais facilmente o assunto, forma, textura, padrões, luz e composição. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos" src="img/tipos/preto-e-branco.jpg" alt="Fotografia Preto e Branco">
+          </div>
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="06">
+          <div class="container-texto reverse-texto">
+            <h1> 06 - Fotografia Comercial </h1>
+            <p> A fotografia comercial é utilizada para produzir imagens para fins comerciais, ou seja, para anunciar ou vender um produto ou serviço. Esse gênero ajuda marcas e empresas a se comunicar visualmente com seu público-alvo, comercializar seus produtos e serviços e transmitir as mensagens certas. As imagens são usadas em anúncios (digitais e impressos) e materiais promocionais.   
+                Por conta de sua variedade de uso, a fotografia comercial também pode ser usada para moda, estilo de vida, comida e fotografia de produtos. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos reverse-imagem" src="img/tipos/comercial.jpg" alt="Fotografia Comercial">
+          </div>
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="07">
+          <div class="container-texto">
+            <h1> 07 - Fotografia Documental </h1>
+            <p> A fotografia documental está focada em retratar eventos, pessoas, lugares e objetos. Diferentemente do fotojornalismo, que busca contar notícias de última hora e histórias de curto prazo, a fotografia documental está focada na produção de imagens verdadeiras que se expandem ao longo do tempo. Este estilo de fotografia é usado em reportagens e registra importantes eventos históricos. 
+                Esse tipo de fotografia raramente inclui retratos posados ou cenas encenadas. Em vez disso, busca retratar situações reais de forma criativa. 
+            </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos" src="img/tipos/documental.jpg" alt="Fotografia Documental">
+          </div>
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="08">
+          <div class="container-texto reverse-texto">
+            <h1> 08 - Fotografia Dupla Exposição </h1>
+            <p> A fotografia de dupla exposição acontece quando duas ou mais imagens são mescladas em apenas uma. Esse resultado pode ser obtido usando uma câmera analógica, uma câmera digital moderna ou durante a edição. Existem alguns aplicativos que também oferecem essa opção. Os fotógrafos aplicam múltiplas exposições em seus designs para produzir recursos visuais com uma vibe sonhadora e artística. Além disso, combinando duas ou mais imagens, você pode dar vida nova a fotos entediantes. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos reverse-imagem" src="img/tipos/dupla-exposicao.jpg" alt="Fotografia de Dupla Exposição">
+          </div>
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="09">
+          <div class="container-texto">
+            <h1> 09 - Fotografia Editorial </h1>
+            <p> A fotografia editorial pode retratar uma história ou uma pessoa em várias mídias, especialmente em jornais, revistas ou blogs. Os assuntos da fotografia editorial podem variar de esportes, moda ou celebridades do cinema até pessoas comuns que fazem parte da história ou do conceito criativo.
+                As fotografias editoriais são diferentes das imagens comerciais e publicitárias, pois estão sujeitas a um outro modelo de licenciamento. Assim, se a mídia ou alguma empresa tiver interesse em uma imagem para comercializar, será necessário obter uma licença apropriada e cumprir seus termos. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos" src="img/tipos/editoral.jpg" alt="Fotografia Editorial">
+          </div>
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="10">
+          <div class="container-texto reverse-texto">
+            <h1> 10 - Fotografia de Evento </h1>
+            <p> A fotografia de eventos é o registro de várias ocasiões, como casamentos, formaturas, shows, conferências, festas corporativas, festivais de música, campeonatos esportivos, etc. Neste caso, essas fotografias podem ser utilizadas para fins pessoais e comerciais, incluindo para publicidade de eventos, empresa ou organização.
+                Ela também faz parte do gênero de fotografia espontânea, pois geralmente exige fotos espontâneas em ambientes dinâmicos. Tornar-se um fotógrafo de eventos te permite participar de eventos interessantes, conhecer novas pessoas e ampliar suas habilidades de comunicação. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <div class="container-imagem">
+            <img class="img-tipos reverse-imagem" src="img/tipos/evento.jpg" alt="Fotografia de Evento">
+          </div>
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="11">
+          <div class="container-texto">
+            <h1> 11 - Fotografia de Família </h1>
+            <p> Fazer fotos de parentes é considerado fotografia de família. Geralmente, os ensaios fotográficos desse gênero envolvem a produção de retratos, fotos lifestyle ou fotografias espontâneas para registrar o crescimento das crianças, mostrar a conexão entre os membros da família e documentar feriados ou eventos familiares.
+                A fotografia de família é um dos estilos mais populares e cotados. Fotografias de famílias felizes podem evocar emoções positivas e são bastante usadas por empresas para comercializar seus produtos e serviços. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <img class="img-tipos" src="img/tipos/familia.jpg" alt="Fotografia de Família">
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="12">
+          <div class="container-texto reverse-texto">
+            <h1> 12 - Fotografia de Moda </h1>
+            <p> A fotografia de moda inclui imagens de passarelas e estilos de rua, até fotos glamorosas apresentadas nas capas das revistas de moda. Não é fácil entrar no universo da fotografia de moda. É essencial que os fotógrafos que estão buscando seu espaço na indústria da moda tenham uma rede de contatos bem desenvolvida, um portfólio robusto e um histórico de trabalho com marcas conhecidas de roupas, sapatos, acessórios, além de casas de moda ou revistas. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <img class="img-tipos reverse-imagem" src="img/tipos/moda.jpg" alt="Fotografia de Moda">
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="13">
+          <div class="container-texto">
+            <h1> 13 - Fotografia Analógica </h1>
+            <p> A fotografia analógica (fotografia com filme) é produzida utilizando uma câmera analógica e rolos de filme sensíveis à luz. É possível capturar fotografias analógicas em papel (fotos instantâneas), filme ou placas rígidas. Tirar fotos à moda antiga é mais difícil do que fazer fotografias digitais. Contudo, é interessante para você aprender mais sobre sua câmera, aprimorar suas habilidades e descobrir novas técnicas.
+                Ao longo da última década, a fotografia analógica se tornou uma nova tendência, porque as pessoas se encantam com a estética das câmeras de filme e as imagens que elas são capazes de produzir. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <img class="img-tipos" src="img/tipos/analogica.jpg" alt="Fotografia Analógica">
+        </section>
+        <!-- ★ end section -->
+
+        <!-- section reverse -->
+        <section class="main-tipos reverse-container" id="14">
+          <div class="container-texto reverse-texto">
+            <h1> 14 - Fotografia Fine Art </h1>
+            <p> Os fotógrafos utilizam a fotografia fine art para expressar criatividade. Seu objetivo é criar visuais artísticos, criativos e às vezes surreais que transmitem a visão, ideia ou conceito do fotógrafo. Estas fotos são frequentemente usadas em revistas ou mídia; podem ser emolduradas e exibidas em galerias, ou vendidas como peças de arte.
+                A fotografia fine art difere dos outros tipos de fotografia por não possuir regras técnicas ou de composição rígidas, permitindo que os fotógrafos explorem sua criatividade. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <img class="img-tipos reverse-imagem" src="img/tipos/fine-art.jpg" alt="Fotografia Fine Art">
+        </section>
+        <!-- end section reverse -->
+
+        <!-- ★ section -->
+        <section class="main-tipos" id="15">
+          <div class="container-texto">
+            <h1> 15 - Fotografia Infravermelha </h1>
+            <p> O objetivo da fotografia infravermelha é dar às imagens uma aparência sobrenatural e surreal ao utilizar filtro ou filme infravermelho. O olho humano não é capaz de enxergar a luz infravermelha, pois ela está além do espectro de luz visível. Por esse motivo, é necessário ter equipamentos e filtros especiais para obter o resultado desejado. Os fotógrafos também podem dar às suas fotos uma aparência sonhadora com a ajuda de edição. </p>
+            <a href="#"> <button class="botao"> Saiba mais </button> </a>
+          </div>
+
+          <img class="img-tipos" src="img/tipos/infravermelho.jpg" alt="Fotografia Infravermelha">
+        </section>
+        <!-- ★ end section -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer>
+        <form class="container-meio">
+          <input class="caixa-input" type="email" name="email" placeholder="Insira seu email" required> 
+          <input class="form-botao-enviar" type="submit" name="botao" value="Inscrever-se">
+        </form>
+
+        <div class="container-footer">
+          <div class="footer-esquerda">
+            <h1> Sobre Nós </h1>
+            <p> A <span>Fotografia em Foco</span> é uma empresa dedicada a capturar os momentos mais preciosos da sua vida, transformando cada clique em uma memória duradoura. Nossa missão é proporcionar experiências fotográficas únicas e emocionantes, sempre com um olhar artístico e profissional. </p>
+          </div>
+
+          <div class="footer-direita">
+            <a href="#"> <img class="redes-sociais" src="img/linkedin.png"  alt="Link na logo do linkedin">  </a>
+            <a href="#"> <img class="redes-sociais" src="img/github.png"    alt="Link na logo do github">    </a>
+            <a href="#"> <img class="redes-sociais" src="img/youtube.png"   alt="Link na logo do youtube">   </a>
+            <a href="#"> <img class="redes-sociais" src="img/instagram.png" alt="Link na logo do instagram"> </a>
+          </div>
+        </div>
+
+        <div class="container-footer-segundo">
+          <h1> ©2024 Fotografia em Foco, Todos os direitos reservados. </h1>
+          <img class="footer-camera" src="img/logo-camera.png" alt="Ícone da Fotografia em Foco">
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end flex -->
+
+    <script src="js/javascript.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>
