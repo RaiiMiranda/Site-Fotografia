@@ -1,0 +1,100 @@
+/* --------------- PÁGINA FOTOGRAFIAS HISTÓRICAS --------------- */
+
+/* --------------- HEADER --------------- */
+.fundo-fotografias-historicas{
+    filter: brightness(50%);
+    height: 100dvh;
+}
+
+/* --------------- MAIN --------------- */
+.container-main{
+    margin-top: 0;
+}
+
+.secao01-titulo h1{
+    background-color: #538393;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    color: #fff;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-fotografias-historicas{
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    padding: 20px 50px;
+}
+
+.container-historicas{
+    width: 100%;
+}
+
+.container-historicas h1{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.container-img-historicas-duas{
+    display: flex;
+}
+
+.img-historicas-duas{
+    width: 50%;
+    padding: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.img-historicas{
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+/* --------------- RESPONSIVO --------------- */
+@media (min-width: 300px) and (max-width: 1800px) {
+    .header-titulo-todos h3{
+        margin-top: 50px;
+    }
+
+    .fundo-fotografias-historicas{
+        height: 350px;
+    }
+
+    .secao01-titulo h1{
+        margin-top: 115px;
+    }
+
+    .container-historicas h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .container-img-historicas-duas{
+        flex-direction: column;
+    }
+
+    .img-historicas-duas{
+        width: 100%;
+    }
+
+    .img-historicas{
+        width: 100%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1800px) {
+    .img-historicas-duas{
+        width: 600px;
+    }
+
+    .img-historicas{
+        width: 600px;
+    }
+}

@@ -1,0 +1,344 @@
+/* --------------- PÁGINA TODOS FOTÓGRAFOS --------------- */
+
+/* --------------- HEADER TODOS FOTÓGRAFOS --------------- */
+.fundo-fotografos-famosos{
+    filter: brightness(50%);
+    height: 100dvh;
+}
+
+/* --------------- MAIN TODOS FOTÓGRAFOS --------------- */
+.main-mobile{
+    display: none;
+}
+
+.main-secao01{
+    margin: 30px 0;
+}
+
+.secao01-texto{
+    margin-bottom: 0;
+}
+
+.secao01-titulo h1{
+    background-color: #538393;
+    box-shadow: 2px 2px 2px #dfdfdf;
+    color: #fff;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-main{
+    align-items: center;
+}
+
+.container-tudo-famosos{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 110dvh;
+    margin-top: 50px;
+}
+
+.container-tudo-famosos img{
+   width: 100%;
+   height: 100%;
+   border-radius: 1rem;
+   object-fit: cover;
+}
+
+.container-tudo-famosos img:hover{
+    opacity: 90%;
+    transition: 0.5s;
+}
+
+.container-esquerda-img{
+    display: flex;
+    height: 50vh;
+}
+
+.container-esquerda-img:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.container-esquerda-img img{
+    z-index: -1;
+    object-fit: cover;
+    width: 41vh;
+    cursor: pointer;
+}
+
+.container-esquerda-img img:hover{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+.container-texto-famosos{
+    background-color: #000000c9;
+    z-index: 1;
+    position: absolute;
+    align-self: flex-end;
+    padding: 20px;
+    width: 41vh;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.container-texto-famosos h1{
+    margin: 0;
+    color: #E89035;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.container-texto-famosos p{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.container-direita-famosos{
+    height: 100%;
+    width: 68dvh;
+}
+
+.container-direita-topo{
+    height: 250px;
+    width: 68dvh;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.container-direita-img-esquerda{
+    margin-right: 10px;
+}
+
+.container-direita-baixo{
+    height: 222px;
+    width: 68dvh;
+}
+
+
+
+/* --------------- PÁGINA FOTÓGRAFO INDIVIDUAL --------------- */
+
+/* --------------- MAIN FOTOGRAFO --------------- */
+/* --------------- TOPO --------------- */
+.container-topo{
+    display: flex;
+    margin-top: 86px;
+}
+
+.navbar-fotografos{
+    background-color: #538393;
+    color: #ffff;
+}
+
+.container-esquerda{
+    background-color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    margin: 0 65px;
+    padding: 30px;
+    border-radius: 0;
+}
+
+.container-esquerda img{
+    width: 500px;
+    border-radius: 0 0 25px 0;
+}
+
+.container-esquerda img:last-child{
+    width: 50px;
+    margin-top: 30px;
+    border-radius: 0;
+}
+
+.container-direita{
+    padding: 65px;
+    padding-left: 0;
+}
+
+.botao, .botao-fotografos{
+    margin: 30px;
+}
+
+.direita-biografia h1{
+    font-family: "Zain", sans-serif;
+    color: #538393;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 50px;
+    padding: 30px;
+}
+
+.container-esquerda, .direita-biografia p{
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #252525;
+    background-color: #dfdfdf;
+    padding: 30px;
+    border-radius: 0 0 25px 0;
+}
+
+/* --------------- FOTOGRAFIAS --------------- */
+.container-imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 65px;
+}
+
+.container-3img{
+    display: flex;
+    width: 100%;
+}
+
+.container-3img:hover > .container-img-texto:hover{
+    transform: scale(1.01);
+    transition: .3s;
+    box-shadow: 0 0 10px #00000080;
+    z-index: 10;
+}
+
+.container-img-texto{
+    display: flex;
+    width: 33.3%;
+    height: 300px;
+    margin: 2px;
+}
+
+.container-img-texto img{
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+/* --------------- RESPONSIVO --------------- */
+@media (min-width: 300px) and (max-width: 1800px){    
+    /* página todos fotógrafos */
+    /* header */
+    .fundo-fotografos-famosos{
+        height: 300px;
+        width: 100%;
+    }
+
+    /* seção 01 */
+    .secao01-texto{
+        margin-bottom: 50px;
+    }
+
+    .secao01-texto h1{
+        margin-top: 10px;
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    /* seção fotógrafos */
+    .main-nao-mobile{
+        display: none;
+    }
+
+    .main-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .container-esquerda-img{
+        margin-bottom: 30px;
+    }
+
+    .container-esquerda-img img{
+        height: 100%;
+        min-width: 300px;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .container-texto-famosos{
+        min-width: 300px;
+    }
+
+    .container-texto-famosos p{
+        text-align: left;
+    }
+
+    .container-texto-famosos h1{
+        font-size: 40px;
+    }
+
+    /* página individual fotógrafos */
+    /* main */
+    .container-topo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .container-esquerda{
+        width: 100%;
+        height: 600px;
+        margin: 0;
+        padding: 30px;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .container-esquerda img{
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .container-direita{
+        padding: 0;
+        border-radius: 80px 0 0 80px;
+    }
+
+    .direita-biografia h1{
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .botao, .botao-fotografos{
+        margin: 30px 0;
+    }
+
+    .container-img-texto{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .container-3img{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1800px){
+    /* página individual fotógrafos */
+    .container-esquerda{
+        height: 800px;
+        padding: 0;
+    }
+
+    .container-esquerda img{
+        width: 80%;
+        height: 600px;
+    }
+
+    .container-esquerda img:last-child{
+        height: 50px;
+    }
+
+    .container-img-texto{
+        height: 400px;
+    }
+}
