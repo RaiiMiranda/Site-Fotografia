@@ -9,11 +9,11 @@
 <img src="img/github/img3.png" alt="Preview do Site" width="100%">
 <img src="img/github/img4.png" alt="Preview do Site" width="100%">
 
-<p> Um site <strong>front-end</strong> responsivo sobre o universo da fotografia, desenvolvido para colocar em prática habilidades como <strong>HTML, CSS e JS</strong>. </p>
+<p> Um site <strong>front-end responsivo</strong> sobre o universo da fotografia, desenvolvido para colocar em prática habilidades como <strong>HTML, CSS e JS</strong>. </p>
 
 <br>
 
-<p> ❖ O projeto aborda alguns temas sobre fotografia, como: </p>
+<p> <strong>❖ O projeto aborda alguns temas sobre fotografia, como: </strong> </p>
 <ul>
   <li> História da fotografia </li>
   <li> 15 fotografias históricas </li>
@@ -25,7 +25,7 @@
 
 <br>
 
-<p> ❖ Principais funcionalidades: </p>
+<p> <strong> ❖ Principais funcionalidades: </strong> </p>
 <ul>
   <li> 🌗 Tema claro e escuro: pode alterar os modos de visualização </li>
   <li> 📝 Formulários: estruturalmente prontos em HTML </li>
@@ -34,6 +34,6 @@
 
 <br>
 
-<p> ❖ Caso queira ver o preview do projeto, acesse o link abaixo: </p>
+<p> <strong> ❖ Caso queira ver o preview do projeto, acesse o link abaixo: </strong> </p>
 
 👉 [Fotografia em Foco](https://raiimiranda.github.io/Site-Fotografia)
