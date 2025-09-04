@@ -7,8 +7,11 @@
 <img src="img/github/img1.png" alt="Preview do Site" width="100%">
 <img src="img/github/img2.png" alt="Preview do Site" width="100%">
 <img src="img/github/img3.png" alt="Preview do Site" width="100%">
+<img src="img/github/img4.png" alt="Preview do Site" width="100%">
 
 <p> Um site <strong>front-end</strong> sobre o universo da fotografia, desenvolvido para colocar em prática habilidades como <strong>HTML, CSS e JS</strong>. </p>
+
+<br>
 
 <p> ❖ O projeto aborda alguns temas sobre fotografia, como: </p>
 <ul>
