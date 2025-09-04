@@ -1,9 +1,13 @@
 <div align="center">
   
   # 📸 Site Fotografia em Foco
+  <img src="https://img.shields.io/static/v1?message=HTML&label=&color=538393&labelColor=&style=for-the-badge" height="25" alt="HTML" />
+  <img src="https://img.shields.io/static/v1?message=CSS&label=&color=E89035&labelColor=&style=for-the-badge" height="25" alt="CSS" />
+  <img src="https://img.shields.io/static/v1?message=JS&label=&color=545454&labelColor=&style=for-the-badge" height="25" alt="JS" />
 
 </div>
 
+<br>
 <img src="img/github/img1.png" alt="Preview do Site" width="100%">
 <img src="img/github/img2.png" alt="Preview do Site" width="100%">
 <img src="img/github/img3.png" alt="Preview do Site" width="100%">
@@ -13,7 +17,7 @@
 
 <br>
 
-<p> <strong>❖ O projeto aborda alguns temas sobre fotografia, como: </strong> </p>
+<img src="https://img.shields.io/static/v1?message=O%20projeto%20aborda%20alguns%20temas%20sobre%20fotografia,%20como:&label=&color=538393&style=for-the-badge" height="30" alt="Descrição" />
 <ul>
   <li> História da fotografia </li>
   <li> 15 fotografias históricas </li>
@@ -25,7 +29,7 @@
 
 <br>
 
-<p> <strong> ❖ Principais funcionalidades: </strong> </p>
+<img src="https://img.shields.io/static/v1?message=Principais%20funcionalidades:&label=&color=538393&style=for-the-badge" height="30" alt="Descrição" />
 <ul>
   <li> 🌗 Tema claro e escuro: pode alterar os modos de visualização </li>
   <li> 📝 Formulários: estruturalmente prontos em HTML </li>
@@ -34,6 +38,6 @@
 
 <br>
 
-<p> <strong> ❖ Caso queira ver o preview do projeto, acesse o link abaixo: </strong> </p>
+<img src="https://img.shields.io/static/v1?message=Caso%20queira%20ver%20o%20preview%20do%20projeto,%20acesse%20o%20link%20abaixo:&label=&color=538393&style=for-the-badge" height="30" alt="Descrição" />
 
 👉 [Fotografia em Foco](https://raiimiranda.github.io/Site-Fotografia)
