@@ -13,8 +13,8 @@
 <p> ❖ O projeto aborda alguns temas sobre fotografia, como: </p>
 <ul>
   <li> História da fotografia </li>
-  <li> 15 Fotografias históricas </li>
-  <li> 5 Fotógrafos famosos </li>
+  <li> 15 fotografias históricas </li>
+  <li> 5 fotógrafos famosos </li>
   <li> Tipos e estilos de fotografias </li>
   <li> Destaques de premiações, como o Sony World Photography Awards 2024 </li>
   <li> Guia para iniciantes </li>
